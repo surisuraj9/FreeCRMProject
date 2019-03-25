@@ -22,7 +22,7 @@ public class LoginPageTest extends TestBase{
 		loginnPage = new LoginPage();
 	}
 	
-/*	@Test(priority=1)
+	@Test(priority=1)
 	public void validatePageTittleTest(){
 		Assert.assertEquals(loginnPage.validatePageTittle(),"CRMPRO  - CRM software for customer "
 				+ "relationship management, sales, and support.");
@@ -31,7 +31,7 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=2)
 	public void validateCRMImageTest(){
 		Assert.assertTrue(loginnPage.validateCRMImage());
-	}*/
+	}
 	
 	@Test(priority=3)
 	public void loginTest(){
