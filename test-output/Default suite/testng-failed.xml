@@ -6,14 +6,4 @@
       <class name="com.crm.qa.testcases.LoginPageTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

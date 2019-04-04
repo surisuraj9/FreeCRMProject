@@ -24,17 +24,19 @@ public class LoginPageTest extends TestBase{
 	
 	@Test(priority=1)
 	public void validatePageTittleTest(){
-		Assert.assertEquals(loginnPage.validatePageTittle(),"CRMPRO  - CRM software for customer "
+		Assert.assertEquals(loginnPage.validatePageTittle(),"CRMPRO - CRM software for customer "
 				+ "relationship management, sales, and support.");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=1)
 	public void validateCRMImageTest(){
+		TestBase.driver.switchTo().parentFrame();
 		Assert.assertTrue(loginnPage.validateCRMImage());
 	}
-	
+
 	@Test(priority=3)
 	public void loginTest(){
+		TestBase.driver.switchTo().parentFrame();
 		homePage=loginnPage.login(TestBase.prop.getProperty("username"), TestBase.prop.getProperty("password"));
 		
 	}
