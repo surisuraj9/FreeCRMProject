@@ -28,7 +28,7 @@ public class LoginPageTest extends TestBase{
 				+ "relationship management, sales, and support.");
 	}
 	
-	@Test(priority=1)
+	@Test(priority=2)
 	public void validateCRMImageTest(){
 		TestBase.driver.switchTo().parentFrame();
 		Assert.assertTrue(loginnPage.validateCRMImage());
